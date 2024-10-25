@@ -105,9 +105,13 @@ Nhưng nếu để ý thì ở source code này không chặn upload file `.htac
 
 # Khuyến Nghị Khắc Phục 
 
-1. Backlist hết các đuôi file mà mod php có thể xử lý, đồng thời chặn người dùng up file `.htaccess`.
+1. Blacklist hết các đuôi file mà mod php có thể xử lý, đồng thời chặn người dùng up file `.htaccess`.
 
 2. Giới hạn quyền truy cập vào thư mục upload.
+3.	Kiểm tra size của file.
+4.	Kiểm tra filetype trước khi user upload.
+5.	Kiểm tra magic number (file header signature) của file.
+
 
 
 
